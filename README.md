@@ -1,4 +1,4 @@
-# Modern Webpack + Babel + TypeScript + React Starter Boilerplate
+# Webpack + Babel + TypeScript + React Boilerplate
 
 - webpack@^4
 - babel@^7
@@ -26,11 +26,9 @@ module.exports = {
 }
 ```
 
-**Use `babel-loader` to `.tsx?`?!**
+**Use `babel-loader` to `/\.tsx?$/` ?!**
 
-Yes, `babel-loader`.
-
-See `.babelrc`:
+Yes, `babel-loader`. See `.babelrc`:
 
 ```json
 {
