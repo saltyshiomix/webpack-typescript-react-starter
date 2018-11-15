@@ -6,15 +6,27 @@
   "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "start": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
     "@types/react": "^16.7.6",
     "@types/react-dom": "^16.0.9",
-    "typescript": "^3.1.6"
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
