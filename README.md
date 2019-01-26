@@ -1,3 +1,4 @@
+<p align="center">Webpack + Babel + TypeScript + React Boilerplate</p>
 <p align="center">
   <a href="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate">
     <img src="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate.svg">
@@ -6,13 +7,6 @@
     <img src="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate/dev-status.svg">
   </a>
 </p>
-
-# Webpack + Babel + TypeScript + React Boilerplate
-
-- webpack@^4
-- babel@^7
-- typescript@^3
-- react@^16
 
 As of `babel@7`, now we can handle `.ts` or `.tsx` files same as `.js` or `.jsx` files like this:
 
