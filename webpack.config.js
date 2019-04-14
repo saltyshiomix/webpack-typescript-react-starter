@@ -30,5 +30,6 @@ module.exports = {
   ],
   devServer: {
     hot: true,
+    overlay: true,
   },
 };
