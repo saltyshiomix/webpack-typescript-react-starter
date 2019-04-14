@@ -1,30 +1,30 @@
-const { resolve } = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './src/index.tsx'
+    index: './src/index.tsx',
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         use: 'babel-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Babel + TypeScript + React = ❤️',
-      template: 'src/index.html'
-    })
-  ]
-}
+      template: 'src/index.html',
+    }),
+  ],
+};
