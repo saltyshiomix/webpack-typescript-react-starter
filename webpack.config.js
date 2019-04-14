@@ -29,6 +29,7 @@ module.exports = {
     }),
   ],
   devServer: {
+    port: 8080, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true,
     hot: true,
     overlay: true,
