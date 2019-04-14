@@ -32,6 +32,7 @@ module.exports = {
     port: 8080, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true,
     hot: true,
+    stats: 'errors-only',
     overlay: true,
   },
 };
