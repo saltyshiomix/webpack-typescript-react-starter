@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "check-types": "tsc",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server"
   },
   "dependencies": {
     "react": "^16.8.6",
