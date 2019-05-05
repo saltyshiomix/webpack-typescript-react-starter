@@ -51,11 +51,16 @@ Thanks to `@babel/preset-typescript`, we can handle `/\.tsx?$/` files same as `/
 # install dependencies
 $ yarn
 
-# start development server
-$ yarn start
+# start a server (development mode)
+# it automatically opens `http://localhost:8080` in your default browser, and you'll see "Babel + TypeScript + React = ❤️"
+$ yarn dev
 
 # check your types
 $ yarn check-types
-```
 
-Open `http://localhost:8080` in your browser, and you'll see "Babel + TypeScript + React = ❤️" :)
+# production build
+$ yarn build
+
+# start a server (production mode)
+$ yarn start
+```
