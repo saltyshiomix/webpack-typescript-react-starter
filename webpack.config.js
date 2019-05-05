@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dev = process.env.NODE_ENV !== 'production'
 
-module.exports = {
+const config = {
   mode: dev ? 'development' : 'production',
   entry: {
     index: './src/index.tsx',
@@ -30,12 +30,17 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-  devServer: {
+};
+
+if (dev) {
+  config.devServer = {
     port: 8080, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen
     hot: true, // https://webpack.js.org/configuration/dev-server/#devserverhot
     compress: true, // https://webpack.js.org/configuration/dev-server/#devservercompress
     stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
     overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
-  },
-};
+  };
+}
+
+module.exports = config;
