@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const dev = process.env.NODE_ENV !== 'production'
 
@@ -40,6 +41,12 @@ if (dev) {
     compress: true, // https://webpack.js.org/configuration/dev-server/#devservercompress
     stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
     overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
+  };
+} else {
+  config.optimization = {
+    minimizer: [
+      new TerserPlugin(),
+    ],
   };
 }
 
