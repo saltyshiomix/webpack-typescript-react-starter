@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "check-types": "tsc",
-    "dev": "webpack-dev-server --color --progress",
-    "build": "webpack",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress",
+    "build": "cross-env NODE_ENV=production webpack",
     "start": "serve dist"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "@types/react": "^16.8.14",
     "@types/react-dom": "^16.8.4",
     "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
     "html-webpack-plugin": "^3.2.0",
     "serve": "^11.0.0",
     "typescript": "^3.4.5",
