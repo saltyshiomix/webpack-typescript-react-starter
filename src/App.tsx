@@ -1,7 +1,5 @@
 import React from 'react';
 
-export default class extends React.Component {
-  render() {
-    return <p>Babel + TypeScript + React = ❤️</p>;
-  }
+export default function App() {
+  return <p>Babel + TypeScript + React = ❤️</p>;
 }
