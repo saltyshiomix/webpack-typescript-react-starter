@@ -1,6 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -36,7 +36,7 @@ const config = {
 if (isProd) {
   config.optimization = {
     minimizer: [
-      new TerserPlugin(),
+      new TerserWebpackPlugin(),
     ],
   };
 } else {
