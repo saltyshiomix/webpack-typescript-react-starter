@@ -2,10 +2,10 @@ const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-const dev = process.env.NODE_ENV !== 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 const config = {
-  mode: dev ? 'development' : 'production',
+  mode: isProd ? 'production' : 'development',
   entry: {
     index: './src/index.tsx',
   },
@@ -33,7 +33,13 @@ const config = {
   ],
 };
 
-if (dev) {
+if (isProd) {
+  config.optimization = {
+    minimizer: [
+      new TerserPlugin(),
+    ],
+  };
+} else {
   config.devServer = {
     port: 8080, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen
@@ -41,12 +47,6 @@ if (dev) {
     compress: true, // https://webpack.js.org/configuration/dev-server/#devservercompress
     stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
     overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
-  };
-} else {
-  config.optimization = {
-    minimizer: [
-      new TerserPlugin(),
-    ],
   };
 }
 
