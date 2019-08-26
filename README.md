@@ -6,6 +6,7 @@
   <a href="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate?type=dev">
     <img src="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate/dev-status.svg">
   </a>
+  <img src="https://img.shields.io/github/license/saltyshiomix/babel-typescript-react-boilerplate.svg" alt="Package License (MIT)">
 </p>
 
 As of `babel@7`, now we can handle `.ts` or `.tsx` files same as `.js` or `.jsx` files like this:
