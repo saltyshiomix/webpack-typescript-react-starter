@@ -40,13 +40,14 @@ if (isProd) {
     ],
   };
 } else {
+  // for more information, see https://webpack.js.org/configuration/dev-server
   config.devServer = {
-    port: 8080, // https://webpack.js.org/configuration/dev-server/#devserverport
-    open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen
-    hot: true, // https://webpack.js.org/configuration/dev-server/#devserverhot
-    compress: true, // https://webpack.js.org/configuration/dev-server/#devservercompress
-    stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
-    overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
+    port: 8080,
+    open: true,
+    hot: true,
+    compress: true,
+    stats: 'errors-only',
+    overlay: true,
   };
 }
 
