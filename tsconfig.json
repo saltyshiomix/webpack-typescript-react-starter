@@ -9,9 +9,9 @@
     "allowJs": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "include": [
-    "src",
-  ],
+    "src"
+  ]
 }
