@@ -9,24 +9,24 @@
   <img src="https://img.shields.io/github/license/saltyshiomix/babel-typescript-react-boilerplate.svg" alt="Package License (MIT)">
 </p>
 
-As of `babel@7`, now we can handle `.ts` or `.tsx` files same as `.js` or `.jsx` files like this:
+As of Babel v7, now we can handle `.ts` or `.tsx` files same as `.js` or `.jsx` files like this:
 
 ```js
 // webpack.config.js
 
 module.exports = {
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
         test: [/\.jsx?$/, /\.tsx?$/],
         use: 'babel-loader',
-        exclude: /node_modules/
-      }
-    ]
-  }
+        exclude: /node_modules/,
+      },
+    ],
+  },
 }
 ```
 
@@ -52,16 +52,17 @@ Thanks to `@babel/preset-typescript`, we can handle `/\.tsx?$/` files same as `/
 # install dependencies
 $ yarn
 
-# start a server (development mode)
-# it automatically opens `http://localhost:8080` in your default browser, and you'll see "Babel + TypeScript + React = ❤️"
+# development mode
+# it automatically opens `http://localhost:8080` in your default browser,
+# and you'll see "Babel + TypeScript + React = ❤️"
 $ yarn dev
 
-# check your types
+# check types
 $ yarn check-types
 
 # production build
 $ yarn build
 
-# start a server (production mode)
+# production mode
 $ yarn start
 ```
