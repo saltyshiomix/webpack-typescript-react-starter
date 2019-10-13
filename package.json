@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "babel-typescript-react-boilerplate",
+  "name": "webpack-typescript-react-starter",
   "version": "1.0.0",
-  "repository": "git@github.com:saltyshiomix/babel-typescript-react-boilerplate.git",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "repository": "git@github.com:saltyshiomix/webpack-typescript-react-starter.git",
+  "author": "Shiono Yoshihide <shiono.yoshihide@gmail.com>",
   "license": "MIT",
   "scripts": {
     "check-types": "tsc",
