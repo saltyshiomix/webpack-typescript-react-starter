@@ -1,12 +1,12 @@
-<p align="center">Webpack + Babel + TypeScript + React Boilerplate</p>
+<p align="center">Webpack + TypeScript + React = ❤️</p>
 <p align="center">
-  <a href="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate">
-    <img src="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate.svg">
+  <a href="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter">
+    <img src="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter.svg">
   </a>
-  <a href="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate?type=dev">
-    <img src="https://david-dm.org/saltyshiomix/babel-typescript-react-boilerplate/dev-status.svg">
+  <a href="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter?type=dev">
+    <img src="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter/dev-status.svg">
   </a>
-  <img src="https://img.shields.io/github/license/saltyshiomix/babel-typescript-react-boilerplate.svg" alt="Package License (MIT)">
+  <img src="https://img.shields.io/github/license/saltyshiomix/webpack-typescript-react-starter.svg" alt="Package License (MIT)">
 </p>
 
 As of Babel v7, now we can handle `.ts` or `.tsx` files same as `.js` or `.jsx` files like this:
@@ -46,15 +46,15 @@ Yes, `babel-loader`. See `.babelrc`:
 
 Thanks to `@babel/preset-typescript`, we can handle `/\.tsx?$/` files same as `/\.jsx?$/` files :)
 
-## How to use
+## Usage
 
 ```bash
-# install dependencies
+# installation
 $ yarn
 
 # development mode
 # it automatically opens `http://localhost:8080` in your default browser,
-# and you'll see "Babel + TypeScript + React = ❤️"
+# and you'll see "Webpack + TypeScript + React = ❤️"
 $ yarn dev
 
 # check types
