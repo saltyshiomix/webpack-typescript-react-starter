@@ -1,11 +1,5 @@
 <p align="center">Webpack + TypeScript + React = ❤️</p>
 <p align="center">
-  <a href="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter">
-    <img src="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter.svg">
-  </a>
-  <a href="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter?type=dev">
-    <img src="https://david-dm.org/saltyshiomix/webpack-typescript-react-starter/dev-status.svg">
-  </a>
   <img src="https://img.shields.io/github/license/saltyshiomix/webpack-typescript-react-starter.svg" alt="Package License (MIT)">
 </p>
 
