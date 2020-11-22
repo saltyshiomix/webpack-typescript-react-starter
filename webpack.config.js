@@ -1,8 +1,11 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
+const isDevelopment = process.env.NODE_ENV === 'development';
 
 const config = {
   mode: isProd ? 'production' : 'development',
@@ -20,8 +23,21 @@ const config = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'babel-loader',
+        // use: 'babel-loader',
         exclude: /node_modules/,
+        use: [
+          // ... other loaders
+          {
+            loader: require.resolve('babel-loader'),
+            options: {
+              // ... other options
+              plugins: [
+                // ... other plugins
+                isDevelopment && require.resolve('react-refresh/babel'),
+              ].filter(Boolean),
+            },
+          },
+        ],
       },
     ],
   },
@@ -30,6 +46,8 @@ const config = {
       title: 'Babel + TypeScript + React = ❤️',
       template: 'src/index.html',
     }),
+    isDevelopment && new webpack.HotModuleReplacementPlugin(),
+    isDevelopment && new ReactRefreshWebpackPlugin(),
   ],
 };
 
